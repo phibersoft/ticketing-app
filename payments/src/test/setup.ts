@@ -8,7 +8,8 @@ declare global {
 
 jest.mock("../nats-wrapper");
 
-process.env.STRIPE_KEY = 'sk_test_51M8qEyF54dfzrIqE2a3q9zo9RYSRNRCqR2rduO6rQPZn23O6vgclGYMwxVTlZrtFwO4v1naRkjoVZd5zrBzhwWiJ00wmMUQG8j'
+process.env.STRIPE_KEY =
+  "sk_test_51M8qEyF54dfzrIqE2a3q9zo9RYSRNRCqR2rduO6rQPZn23O6vgclGYMwxVTlZrtFwO4v1naRkjoVZd5zrBzhwWiJ00wmMUQG8j";
 let mongo: MongoMemoryServer;
 
 beforeAll(async () => {
@@ -22,6 +23,7 @@ beforeAll(async () => {
 });
 
 beforeEach(async () => {
+  jest.clearAllMocks();
   const collections = await mongoose.connection.db.collections();
 
   for (let collection of collections) {
