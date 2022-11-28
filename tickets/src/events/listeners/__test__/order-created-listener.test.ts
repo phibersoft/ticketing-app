@@ -1,8 +1,9 @@
+import { Message } from "node-nats-streaming";
+import mongoose from "mongoose";
+import { OrderCreatedEvent, OrderStatus } from "@phiberorg/common";
 import { OrderCreatedListener } from "../order-created-listener";
 import { natsWrapper } from "../../../nats-wrapper";
 import { Ticket } from "../../../models/ticket";
-import { OrderCreatedEvent, OrderStatus } from "@phiberorg/common";
-import mongoose from "mongoose";
 
 const setup = async () => {
   // Create an instance of the listener
@@ -21,15 +22,14 @@ const setup = async () => {
     id: new mongoose.Types.ObjectId().toHexString(),
     version: 0,
     status: OrderStatus.Created,
-    userId: "asdf",
-    expiresAt: "asdf",
+    userId: "alskdfj",
+    expiresAt: "alskdjf",
     ticket: {
       id: ticket.id,
       price: ticket.price,
     },
   };
 
-  // Create a fake message object
   // @ts-ignore
   const msg: Message = {
     ack: jest.fn(),
@@ -50,7 +50,6 @@ it("sets the userId of the ticket", async () => {
 
 it("acks the message", async () => {
   const { listener, data, msg } = await setup();
-
   await listener.onMessage(data, msg);
 
   expect(msg.ack).toHaveBeenCalled();
