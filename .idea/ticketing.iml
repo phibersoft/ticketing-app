@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/auth/src/routes/__test__" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/auth/src/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tickets/src/routes/__test__" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tickets/src/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/orders/src/__mocks__" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/orders/src/routes/__test__" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/orders/src/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tickets/src/__mocks__" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/orders/src/events/listeners/__test__" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tickets/src/events/listeners/__test__" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tickets/src/models/__test__" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/expiration/src/__mocks__" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/payments/src/__mocks__" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/payments/src/routes/__test__" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/payments/src/test" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/temp" />
+      <excludeFolder url="file://$MODULE_DIR$/.tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/common/build" />
+      <excludeFolder url="file://$MODULE_DIR$/payments/src/events/listeners/__test__" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
