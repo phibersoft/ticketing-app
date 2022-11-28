@@ -1,0 +1,3 @@
+[submodule "ticketing-app-common"]
+	path = common
+	url = https://github.com/phibersoft/ticketing-app-common
